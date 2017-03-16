@@ -1,0 +1,13 @@
+{
+	"name": "Stash tags",
+	"manifest_version": 2,
+	"version": "1.0",
+	"description": "Ajustar cagada do stash",
+	"icons": {
+		"48": "icon.png"
+	},
+    "content_scripts": [ {
+        "js": [ "inject/jquery.js", "inject/stash.js" ],
+        "matches": [ "http://stash.b2w/*" ]
+    } ]
+}
